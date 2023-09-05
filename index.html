@@ -5,18 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-        <link rel="shortcut icon" href="./assets/icons/home-1-svgrepo-com.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icons/home-1-svgrepo-com.svg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            background-image: url('./assets/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <li><a href="./pages/experiences.html">Experiences</a></li>
-        <li><a href="./pages/technologies.html">Technologies</a></li>
-        <li><a href="./pages/about-me.html">About me</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
+    <nav class="flex w-6/12">
+        <li class="list-none"><a class="no-underline" href="./pages/experiences.html">Experiences</a></li>
+        <li class="list-none"><a class="no-underline" href="./pages/technologies.html">Technologies</a></li>
+        <li class="list-none"><a class="no-underline" href="./pages/about-me.html">About me</a></li>
+        <li class="list-none"><a class="no-underline" href="./pages/contact.html">Contact</a></li>
     </nav>
+    <div class="flex h-screen justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-3xl font-semibold mb-6">Visitá las páginas disponibles </h1>
 
+            <div class="grid grid-cols-2 gap-4">
+                <a href="pages/technologies.html"
+                    class="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105">
+                    Tecnologias
+                </a>
+                <a href="pages/about-me.html"
+                    class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105">
+                    Sobre mí
+                </a>
+                <a href="pages/contact.html"
+                    class="bg-red-500 hover:bg-red-600 text-white p-4 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105">
+                    Contacto
+                </a>
+                <a href="pages/experiences.html"
+                    class="bg-purple-500 hover:bg-purple-600 text-white p-4 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105">
+                    Experiencias
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
